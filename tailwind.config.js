@@ -11,13 +11,17 @@ export default {
         "primary-300": "#903AFF",
         "secondary-100": "#D434FE",
         "mixed": "linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)",
+        "border": "#903AFF",
+        "span": "#D434FE",
+        "extra": "#FF26B9",
       },
       backgroundImage: () => ({
         "mobile-home": "url('./assets/HomePageGraphic.png')",
       }),
       fontFamily: {
-        opensans: ["Open Sans', sans-serif"],
+        opensans: ["Open Sans", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
+        unicaone: ['Unica One', "cursive"],
       },
     },
   },
