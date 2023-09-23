@@ -1,7 +1,14 @@
-import React, { useState } from 'react';
+/* eslint-disable react-refresh/only-export-components */
+import { useState } from 'react';
+
+interface FAQItem {
+  question: string;
+  answer: string;
+  isOpen: boolean;
+}
 
 function FAQ() {
-  const [faqs, setFaqs] = useState([
+  const [faqs, setFaqs] = useState<FAQItem[]>([
     {
       question: 'Can I work on a project I started before the hackathon?',
       answer: 'Answer to Question 1',
@@ -32,7 +39,6 @@ function FAQ() {
       answer: 'Answer to Question 6',
       isOpen: false,
     },
-    
   ]);
 
   const toggleFAQ = (index: number) => {
@@ -43,7 +49,7 @@ function FAQ() {
 
   return (
     <div className="max-w-xl mx-auto">
-      {faqs.map((faq, index: number) => (
+      {faqs.map((faq, index) => (
         <div key={index} className="mb-4">
           <div
             className="flex justify-between items-center border-b border-span bg-transparent cursor-pointer pb-3"
