@@ -8,8 +8,8 @@ const FAQs: React.FC = () => {
   return (
     <section className={`${flexBetween} w-full border-b border-gray-800 py-10`} id="faq">
       <div className={`flex mx-auto w-4/5 gap-16 container`}>
-        <div className="flex flex-col gap-14 w-1/2">
-          <div className="flex flex-col gap-5">
+        <div className="flex flex-col items-start gap-14 w-1/2">
+          <div className="flex w-full flex-col gap-5">
             <div>
               <h1 className="text-4xl font-bold font-opensans capitalize">frequently Asked
               <br /><span className="text-span">Question</span></h1>
@@ -20,7 +20,7 @@ const FAQs: React.FC = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div className="w-full">
             <FAQ/>
           </div>
         </div>

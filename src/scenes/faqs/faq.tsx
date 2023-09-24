@@ -48,18 +48,22 @@ function FAQ() {
   };
 
   return (
-    <div className="max-w-xl mx-auto">
+    <div className="max-w-xl w-full flex flex-col gap-3">
       {faqs.map((faq, index) => (
         <div key={index} className="mb-4">
           <div
-            className="flex justify-between items-center border-b border-span bg-transparent cursor-pointer pb-3"
+            className="flex justify-between items-center border-b border-span bg-transparent cursor-pointer pb-3 w-full"
             onClick={() => toggleFAQ(index)}
           >
-            <p className="text-sm font-normal font-montserrat text-white">{faq.question}</p>
-            <p className="text-xl text-span">{faq.isOpen ? '-' : '+'}</p>
+            <div>
+              <p className="text-sm font-normal font-montserrat text-white">{faq.question}</p>
+            </div>
+            <div>
+              <p className="text-xl text-span">{faq.isOpen ? '-' : '+'}</p>
+            </div>
           </div>
           {faq.isOpen && (
-            <div className="bg-transparent text-sm font-normal font-montserrat py-3 text-white">{faq.answer}</div>
+            <div className="bg-transparent text-sm font-normal font-montserrat py-3 text-span">{faq.answer}</div>
           )}
         </div>
       ))}

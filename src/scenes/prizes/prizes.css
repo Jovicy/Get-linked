@@ -1,0 +1,5 @@
+.prizes {
+    background: url("/src/assets/prize-bg.png"), lightgray 0px -0.093px / 100% 109.967% no-repeat;
+    background-blend-mode: color-burn;
+    background-color: #150e28;
+}
