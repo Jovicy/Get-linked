@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link, useLocation } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 import Logo from "../../assets/logo.png";
 import Menu from "../../assets/menu.svg";
 import Close from "../../assets/close.svg";
@@ -53,7 +54,7 @@ const Navbar: React.FC = () => {
                       smooth={true}
                       offset={-150}
                       duration={500}
-                      className="font-montserrat font-normal text-base cursor-pointer capitalize"
+                      className="font-montserrat font-normal text-base cursor-pointer capitalize hover:text-border"
                       onClick={() => handleMobileLinkClick("timeline")}
                     >
                       Timeline
@@ -61,7 +62,7 @@ const Navbar: React.FC = () => {
                   ) : (
                     <Link
                       to="/"
-                      className="font-montserrat font-normal text-base cursor-pointer capitalize"
+                      className="font-montserrat font-normal text-base cursor-pointer capitalize hover:text-border"
                     >
                       Timeline
                     </Link>
@@ -78,7 +79,7 @@ const Navbar: React.FC = () => {
                       smooth={true}
                       offset={-150}
                       duration={500}
-                      className="font-montserrat font-normal text-base cursor-pointer capitalize"
+                      className="font-montserrat font-normal text-base cursor-pointer capitalize hover:text-border"
                       onClick={() => handleMobileLinkClick("overview")}
                     >
                       Overview
@@ -86,7 +87,7 @@ const Navbar: React.FC = () => {
                   ) : (
                     <Link
                       to="/"
-                      className="font-montserrat font-normal text-base cursor-pointer capitalize"
+                      className="font-montserrat font-normal text-base cursor-pointer capitalize hover:text-border"
                     >
                       Overview
                     </Link>
@@ -103,7 +104,7 @@ const Navbar: React.FC = () => {
                       smooth={true}
                       offset={-150}
                       duration={500}
-                      className="font-montserrat font-normal text-base cursor-pointer capitalize"
+                      className="font-montserrat font-normal text-base cursor-pointer capitalize hover:text-border"
                       onClick={() => handleMobileLinkClick("faq")}
                     >
                       FAQs
@@ -111,7 +112,7 @@ const Navbar: React.FC = () => {
                   ) : (
                     <Link
                       to="/"
-                      className="font-montserrat font-normal text-base cursor-pointer capitalize"
+                      className="font-montserrat font-normal text-base cursor-pointer capitalize hover:text-border"
                     >
                       FAQs
                     </Link>
@@ -120,12 +121,12 @@ const Navbar: React.FC = () => {
               </li>
               <li>
                 <div>
-                  <Link
+                  <NavLink
                     to="/contact"
-                    className="font-montserrat font-normal text-base cursor-pointer capitalize"
+                    className="font-montserrat font-normal text-base cursor-pointer capitalize hover:text-border"
                   >
                     Contact
-                  </Link>
+                  </NavLink>
                 </div>
               </li>
             </ul>
@@ -174,7 +175,7 @@ const Navbar: React.FC = () => {
                       smooth={true}
                       offset={-150}
                       duration={500}
-                      className="font-montserrat font-normal text-base cursor-pointer capitalize"
+                      className="font-montserrat font-normal text-base cursor-pointer capitalize hover:text-border"
                       onClick={() => handleMobileLinkClick("timeline")}
                     >
                       Timeline
@@ -182,7 +183,7 @@ const Navbar: React.FC = () => {
                   ) : (
                     <Link
                       to="/"
-                      className="font-montserrat font-normal text-base cursor-pointer capitalize"
+                      className="font-montserrat font-normal text-base cursor-pointer capitalize hover:text-border"
                     >
                       Timeline
                     </Link>
@@ -199,7 +200,7 @@ const Navbar: React.FC = () => {
                       smooth={true}
                       offset={-150}
                       duration={500}
-                      className="font-montserrat font-normal text-base cursor-pointer capitalize"
+                      className="font-montserrat font-normal text-base cursor-pointer capitalize hover:text-border"
                       onClick={() => handleMobileLinkClick("overview")}
                     >
                       Overview
@@ -207,7 +208,7 @@ const Navbar: React.FC = () => {
                   ) : (
                     <Link
                       to="/"
-                      className="font-montserrat font-normal text-base cursor-pointer capitalize"
+                      className="font-montserrat font-normal text-base cursor-pointer capitalize hover:text-border"
                     >
                       Overview
                     </Link>
@@ -224,7 +225,7 @@ const Navbar: React.FC = () => {
                       smooth={true}
                       offset={-150}
                       duration={500}
-                      className="font-montserrat font-normal text-base cursor-pointer capitalize"
+                      className="font-montserrat font-normal text-base cursor-pointer capitalize hover:text-border"
                       onClick={() => handleMobileLinkClick("faq")}
                     >
                       FAQs
@@ -232,7 +233,7 @@ const Navbar: React.FC = () => {
                   ) : (
                     <Link
                       to="/"
-                      className="font-montserrat font-normal text-base cursor-pointer capitalize"
+                      className="font-montserrat font-normal text-base cursor-pointer capitalize hover:text-border"
                     >
                       FAQs
                     </Link>
@@ -243,7 +244,7 @@ const Navbar: React.FC = () => {
                 <div>
                   <Link
                     to="/contact"
-                    className="font-montserrat font-normal text-base cursor-pointer capitalize"
+                    className="font-montserrat font-normal text-base cursor-pointer capitalize hover:text-border"
                   >
                     Contact
                   </Link>

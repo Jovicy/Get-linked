@@ -22,26 +22,26 @@ const Partners: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className=" flex flex-col items-center gap-5 justify-center border border-span rounded-md w-full p-10 bg-mixed-partner">
-          <div className="flex items-center justify-center gap-5">
-            <div className="flex items-center justify-center w-[20rem] border border-span rounded-lg cursor-pointer h-[8.5rem] p-10">
+        <div className="flex flex-col items-center gap-0 justify-center border border-span rounded-md w-full p-10 bg-mixed-partner">
+          <div className="flex items-center justify-center gap-0">
+            <div className="flex items-center justify-center w-[20rem] border-r border-b border-span cursor-pointer h-[8.5rem] p-10">
               <img src={wisper} alt="liberty-logo" />
             </div>
-            <div className="flex items-center justify-center w-[20rem] border border-span rounded-lg cursor-pointer h-[8.5rem] p-10">
+            <div className="flex items-center justify-center w-[20rem] border-none border-span cursor-pointer h-[8.5rem] p-10">
               <img src={libertyPay} alt="liberty-logo" />
             </div>
-            <div className="flex items-center justify-center w-[20rem] border border-span rounded-lg cursor-pointer h-[8.5rem] p-10">
+            <div className="flex items-center justify-center w-[20rem] border-l border-b border-span cursor-pointer h-[8.5rem] p-10">
               <img src={vuscular} alt="liberty-logo" />
             </div>
           </div>
-          <div className="flex items-center justify-center gap-5">
-            <div className="flex items-center justify-center w-[20rem] border border-span rounded-lg cursor-pointer h-[8.5rem] p-10">
+          <div className="flex items-center justify-center gap-0">
+            <div className="flex items-center justify-center w-[20rem] border-r border-span cursor-pointer h-[8.5rem] p-10">
               <img src={libertyLogo} alt="liberty-logo" />
             </div>
-            <div className="flex items-center justify-center w-[20rem] border border-span rounded-lg cursor-pointer h-[8.5rem] p-10">
+            <div className="flex items-center justify-center w-[20rem] border-t border-span cursor-pointer h-[8.5rem] p-10">
               <img src={winWise} alt="liberty-logo" />
             </div>
-            <div className="flex items-center justify-center w-[20rem] border border-span rounded-lg cursor-pointer h-[8.5rem] p-10">
+            <div className="flex items-center justify-center w-[20rem] border-l border-span cursor-pointer h-[8.5rem] p-10">
               <img src={payBox} alt="liberty-logo" />
             </div>
           </div>
